@@ -1,0 +1,105 @@
+.gradient{
+    position: absolute;
+    width: 160vw;
+    height: 300vh;
+    left: calc(50% - 160vw/2);
+    top: -278vh;
+    background: radial-gradient(50% 50% at 50% 50%, #0049FA 51.73%, rgba(8, 8, 22, 0) 100%);
+    opacity: 0.35;
+}
+
+
+
+/*! Shaking animation for the icons.... */
+
+#phone:hover {
+    animation: effect 0.4s forwards ease-out;
+    cursor: pointer;
+}
+
+@keyframes effect {
+0% {
+transform: translateX(0px) rotate(0deg);
+}
+
+20% {
+transform: translateX(-6px) rotate(-6deg) scale(120%);
+}
+
+40% {
+transform: translateX(-3px) rotate(-3deg);
+}
+
+60% {
+transform: translateX(6px) rotate(6deg);
+}
+
+80% {
+transform: translateX(3px) rotate(3deg);
+}
+
+100% {
+transform: translateX(0px) rotate(0deg);
+}
+
+}
+
+/** //////////////////////////////////// */
+#message:hover{
+    animation: updown 0.4s forwards ease-out;
+    cursor: pointer;
+}
+
+@keyframes updown {
+    0% {
+    transform: translateY(0px);
+    }
+
+    20% {
+    transform: translateY(6px);
+    transform: scale(107%);
+    }
+
+    40% {
+    transform: translateY(3px);
+    }
+
+    50% {
+    transform: translateY(0px);
+    }
+    
+    60% {
+    transform: translateY(-3px);
+    transform: scale(50%);
+    }
+
+    80% {
+    transform: translateY(-6px);
+    }
+    
+    
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+/** ////////////////////////////////////// */
+
+#building:hover{
+    animation: round 0.4s forwards ease-out;
+    cursor: pointer;
+}
+
+@keyframes round {
+    0% {
+    transform: rotateY(0deg);
+    }
+    
+    50% {
+    transform: rotateY(180deg) scale(115%);
+    }
+    
+    100% {
+    transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,163 @@
+/* //?##################################################################################################################################### */
+/*//!``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+/*//!                  Slider styles[Above blogs and articles.]...Here LBAA before the className means LandingBlogAndArticles              */
+/*//!..................................................................................................................................... */
+/* //?##################################################################################################################################### */
+
+
+/*  *********************************************************************************************************************************** */
+/* //!......................................................This is for large screen...................................................... */
+/*  *********************************************************************************************************************************** */
+
+.LBAAnavigation_area{
+  width: 100wv;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.LBAAnavigator{
+  width: 100wv;
+  border-top: 1px solid #0049FA;
+  position: relative;
+}
+
+.LBAAnavigator_slider{
+  /* content: ''; */
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  top: -14.4px;
+  left : calc(14%);
+  border-right: 1px solid #0049FA;
+  border-bottom: 1px solid #0049FA;
+  background: white;
+  transform: rotate(45deg);
+  transition: 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.LBAAnavigation_list{
+  padding-top: 3.5rem;
+  width: 100vw;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.LBAAnavigator ul li:nth-child(1).active ~ .LBAAnavigator_slider{
+  left : calc(14%);
+}
+.LBAAnavigator ul li:nth-child(2).active ~ .LBAAnavigator_slider{
+  left : calc(49.5%);
+}
+.LBAAnavigator ul li:nth-child(3).active ~ .LBAAnavigator_slider{
+  left : calc(85%);
+}
+
+
+
+/*  *********************************************************************************************************************************** */
+/* //! ::::::::::::::::::::::::::::::::::::::::::::::::::                         ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* //!....................................................This is for small screen........................................................*/
+/* //!:::::::::::::::::::::::::::::::::::::::::::::::::::                         ::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*  *********************************************************************************************************************************** */
+.LBAAnavigation_area_ss{
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.LBAAnavigator_ss{
+  width: 100wv;
+  border-top: 1px solid #0049FA;
+  position: relative;
+}
+
+.LBAAnavigator_ss::before{
+  content: '';
+  height: 24px;
+  width: 24px;
+  top: -3.4px;
+  left: 50%;
+  transform:  rotate(45deg) translate(-50%);
+  position: absolute;
+  border-right: 1px solid #0049FA;
+  border-bottom: 1px solid #0049FA;
+  background: white;
+}
+
+/* .LBAAnavigator_content_ss{
+  width: 100vw;
+  background: transparent; */
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+/* } */
+
+/* .LBAAnavigation_list_ss{
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  white-space:nowrap;
+  overflow-x: scroll;
+  overflow-y: hide;
+  -webkit-overflow-scrolling: scroll;
+}
+.LBAAlist_item_ss{
+  display: inline-block;
+} */
+
+/* test */
+.LBAAnavigator_content_ss {
+  margin-top: 1.5rem;
+  width:100vw;
+  height: 60px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+.LBAAnavigation_list_ss {
+  position: relative;
+  height:90px; /* 40px - more place for scrollbar, is hidden under parent box */
+  padding-top:5px;
+  padding-bottom: 5px;
+  white-space:nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  scroll-snap-stop: center;
+}
+
+
+.LBAAlist_item_ss {
+  display:inline-block;
+}
+
+.LBAAlist_item_ss {
+  margin-left:50px
+}
+
+.LBAAnavigation_list_ss li:nth-child(1){
+  transition: scroll 1s ease-out;
+}
+
+.LBAAnavigation_list_ss li:nth-child(1).active{
+  scroll-snap-align: center;
+}
+.LBAAnavigation_list_ss li:nth-child(2).active{
+  scroll-snap-align: center;
+}
+.LBAAnavigation_list_ss li:nth-child(3).active{
+  scroll-snap-align: center;
+}
+

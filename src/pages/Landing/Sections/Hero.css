@@ -1,0 +1,14 @@
+/* Radial gradient */
+
+.LandingHeroGradient{
+  position: absolute;
+  height: 140vh;
+  width: 120vw;
+  top: -100vh;
+  left: -10vw;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(50% 50% at 50% 50%, #0049FA 0%, rgba(8, 8, 22, 0) 100%);
+  opacity: 0.25;
+}
+

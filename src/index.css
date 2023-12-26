@@ -1,0 +1,688 @@
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  scrollbar-3dlight-color: aquamarine;
+  scroll-behavior: smooth;
+}
+
+main{
+  margin: 0;
+  box-sizing: border-box;
+  overscroll-behavior-y: contain;
+}
+
+.grad{
+  position: absolute;
+  height: 120vh;
+  width: 140vw; 
+  top: -100vh;
+  left: -20vw;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(50% 50% at 50% 50%, #0049FA 0%, rgba(8, 8, 22, 0) 100%);
+  opacity: 0.20;
+}
+
+
+/* //? __________________________________________________________________________________________________________________________________ */
+/* //?---------------------------------------------------                                  -----------------------------------------------*/
+/* //!...................................................   Custom scroll Bar animations   .............................................. */
+/* //? --------------------------------------------------                                   ---------------------------------------------- */
+/*//?____________________________________________________________________________________________________________________________________ */
+
+body::-webkit-scrollbar{
+  width: .2rem;
+  background: rgba(10, 10, 10, 0.5);
+  display: hide;
+}
+
+body::-webkit-scrollbar-track{
+background: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb{
+background: rgb(33, 40, 255);
+border-radius: 8px;
+}
+body::-webkit-scrollbar-track-piece
+{
+   display:none;
+}
+
+/*//?###################################################################################################################################*/
+/*//! ....................................................   Tailwind CSS Directives   ................................................ */
+/*//?###################################################################################################################################*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/*//?######################################################################################################################################*/
+/*//?##################################################################################################################################### */
+/*//!::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*//!::::::::::::::::::::::::::::::::::::                                                              ::::::::::::::::::::::::::::::::::::*/
+/*//!::::::::::::::::::::::::::::::::::::    Performance and Marketing page Css is here                ::::::::::::::::::::::::::::::::::::*/
+/*//!::::::::::::::::::::::::::::::::::::                                                              ::::::::::::::::::::::::::::::::::::*/
+/*//!::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*//?######################################################################################################################################*/
+/*//?######################################################################################################################################*/
+
+/*//? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/*//!.....................................                                                              ..................................*/
+/*//!.....................................                   Circle animation                           .................................. */
+/*//!.....................................                                                              ..................................*/
+/*//?%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//!....................................                      Large Screen                            .................................. */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.PMcircularArea {
+  position: relative;
+  display: inline-block;
+}
+
+.PMmainCircleActive {
+  position: relative;
+  margin-left: -640px;
+  width: 812px;
+  height: 812px;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  /* z-index: 0; */
+  opacity: 1;
+}
+
+.PMmainCircle {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 806px;
+  height: 806px;
+  background: #080816;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.PMarc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: #024dfc;
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+#PMarcRotator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: #024dfc;
+  transform-origin: 0 0;
+  z-index: 8;
+  transform: rotate(-90deg) skew(77deg);
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+
+
+/*  //? //////////////////////////////////////////////////////// */
+.PMmainCircleActive div:nth-child(1){
+  transform: rotate(-32deg) skew(82deg);
+}
+.PMmainCircleActive div:nth-child(2){
+  transform: rotate(-14deg) skew(82deg);
+}
+.PMmainCircleActive div:nth-child(3){
+  transform: rotate(4deg) skew(82deg);
+}
+.PMmainCircleActive div:nth-child(4){
+  transform: rotate(22deg) skew(82deg);
+}
+
+/* //? ////////////////////////////////////////////////////////// */
+.PMcontentCircle{
+  position: absolute;
+  left: 172px;
+  top: 0px;
+  height: 812px;
+  width: 300px;
+}
+
+.PMcontentCircle{
+  z-index: 10;
+}
+
+.PMcontentCircle button:nth-child(1){
+  position: absolute;
+  top: 200px;
+  left: -16px;
+  font-size: 1rem;
+  width: auto;
+  transition: 0.3;
+}
+.PMcontentCircle button:nth-child(2){
+  position: absolute;
+  top: 320px;
+  left: 14px;
+  font-size: 1rem;
+  width: auto;
+  transition: 0.3;
+}
+.PMcontentCircle button:nth-child(3){
+  position: absolute;
+  top: 440px;
+  left: 14px;
+  font-size: 1rem;
+  width: 2rem;
+  transition: .3;
+}
+.PMcontentCircle button:nth-child(4){
+  position: absolute;
+  top: 560px;
+  left: -16px;
+  font-size: 1rem;
+  width: 2rem;
+  transition: 0.3;
+}
+
+
+
+/* //? .... Active content enlarger.... */
+.PMcontentCircle button:nth-child(1).active{
+  font-size: 2rem;
+  top: 190px;
+  animation: circTextAnim1 .2s ease-out;
+}
+.PMcontentCircle button:nth-child(2).active{
+  font-size: 2rem;
+  top: 310px;
+  animation: circTextAnim2 .2s ease-out;
+}
+.PMcontentCircle button:nth-child(3).active{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  top: 430px;
+  animation: circTextAnim3 .2s ease-out;
+}
+.PMcontentCircle button:nth-child(4).active{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  top: 550px;
+  animation: circTextAnim4 .2s ease-out;
+}
+
+
+@keyframes circTextAnim1{
+  from { font-size: 1rem; opacity: 0.7;}
+  to { font-size: 2rem; opacity: 1; }
+}
+@keyframes circTextAnim2 {
+  from { font-size: 1rem; opacity: 0.7;}
+  to { font-size: 2rem; opacity: 1; }
+}
+@keyframes circTextAnim3 {
+  from { font-size: 1rem; opacity: 0.7;}
+  to { font-size: 2rem; opacity: 1; }
+}
+@keyframes circTextAnim4 {
+  from { font-size: 1rem; opacity: 0.7;}
+  to { font-size: 2rem; opacity: 1; }
+}
+
+
+
+/* //* _///////////////....Active..../////////////////// */
+
+.PMmainCircleActive div:nth-child(1).active ~ #PMarcRotator{
+  transform: rotate(-34deg) skew(77deg);
+}
+.PMmainCircleActive div:nth-child(2).active ~ #PMarcRotator{
+  transform: rotate(-16deg) skew(77deg);
+}
+.PMmainCircleActive div:nth-child(3).active ~ #PMarcRotator{
+  transform: rotate(2deg) skew(77deg);
+}
+.PMmainCircleActive div:nth-child(4).active ~ #PMarcRotator{
+  transform: rotate(20deg) skew(77deg);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//!....................................                      Small Screen                            .................................. */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.PMcircularAreaSmall {
+  position: relative;
+  display: inline-block;
+}
+
+.PMmainCircleBaseSmall {
+  position: relative;
+  margin-left: -156px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.PMmainCircleSmall {
+  /* position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 696px;
+  height: 696px;
+  background: #22fff8;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: .3; */ 
+  z-index: 0;
+} 
+
+.PMarcSmall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: #024dfc;
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+.PMmainCircleBaseSmall div:nth-child(1){
+  transform: rotate(-127deg) skew(77deg);
+}
+.PMmainCircleBaseSmall div:nth-child(2){
+  transform: rotate(-98deg) skew(73deg);
+}
+.PMmainCircleBaseSmall div:nth-child(3){
+  transform: rotate(-65deg) skew(77deg);
+}
+.PMmainCircleBaseSmall div:nth-child(4){
+  display: none;
+}
+
+
+/* Rotator Arc */
+#PMarcRotatorSmall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  transform-origin: 0 0;
+  z-index: 8;
+  transform: rotate(-96deg) skew(77deg);
+  transition: 0.7s;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+.PMcircleContentSmall1.active{
+  position: absolute;
+  font-size: 1rem;
+  display: block;
+}
+.PMcircleContentSmall2.active{
+  position: absolute;
+  font-size: 1rem;
+  display: block;
+}
+.PMcircleContentSmall3.active{
+  position: absolute;
+  font-size: 1rem;
+  display: block;
+}
+.PMcircleContentSmall4.active{
+  position: absolute;
+  font-size: 1rem;
+  display: block;
+}
+
+
+
+
+
+
+/* //!   .......................................Crazy Active classes for small screen................................. */
+
+/* //* .............................................................Condition 1  */
+.PMcircularAreaSmall {
+  position: relative;
+  display: inline-block;
+}
+
+.PMcircleContentSmall1.active button:nth-child(1){
+  position: absolute;
+  left: calc(-20px);
+  top:-706px;
+  width: 60px;
+  transform: rotate(-27deg);
+  animation: circTextAnimSmall1a 1s ease-out;
+}
+.PMcircleContentSmall1.active button:nth-child(2){
+  position: absolute;
+  left: calc((100vw/2));
+  transform: translateX(-50%);
+  top:-754px;
+  width: 90px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  animation: circTextAnimSmall1b 1s ease-out;
+}
+.PMcircleContentSmall1.active button:nth-child(3){
+  position: absolute;
+  left: 330px;
+  top:-706px;
+  width: 90px;
+  transform: rotate(27deg);
+  animation: circTextAnimSmall1a 1s ease-out;
+}
+.PMcircleContentSmall1.active button:nth-child(4){
+display: none;
+}
+
+
+
+
+/* //* ..............................................................Condition 2  */
+
+.PMcircleContentSmall2.active button:nth-child(4){
+  position: absolute;
+  left: calc(-40px);
+  top:-696px;
+  width: 60px;
+  transform: rotate(-27deg);
+  animation: circTextAnimSmall2a 1s ease-out;
+}
+.PMcircleContentSmall2.active button:nth-child(1){
+  position: absolute;
+  left: calc((100vw/2));
+  transform: translateX(-50%);
+  top:-754px;
+  width: 90px;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  animation: circTextAnimSmall2b 1s ease-out;
+}
+.PMcircleContentSmall2.active button:nth-child(2){
+  position: absolute;
+  left: 360px;
+  top:-706px;
+  width: 20px;
+  transform: rotate(27deg);
+  animation: circTextAnimSmall1a 1s ease-out;
+}
+.PMcircleContentSmall2.active button:nth-child(3){
+  display: none;
+}
+
+/* //* ..............................................................Condition 3  */
+
+.PMcircleContentSmall3.active button:nth-child(3){
+  position: absolute;
+  left: calc(-40px);
+  top:-698px;
+  width: 60px;
+  transform: rotate(-27deg);
+  animation: circTextAnimSmall3a 1s ease-out;
+}
+.PMcircleContentSmall3.active button:nth-child(4){
+  position: absolute;
+  left: calc((100vw/2));
+  transform: translateX(-50%);
+  margin-left: 0rem;
+  top: -760px;
+  width: 90px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  animation: circTextAnimSmall3b 1s ease-out;
+}
+.PMcircleContentSmall3.active button:nth-child(1){
+  position: absolute;
+  left: 360px;
+  top:-706px;
+  width: 20px;
+  transform: rotate(27deg);
+  animation: circTextAnimSmall3c 1s ease-out;
+}
+.PMcircleContentSmall3.active button:nth-child(2){
+  display: none;
+}
+
+/* //* ............................................................Condition 4  */
+
+.PMcircleContentSmall4.active button:nth-child(2){
+  position: absolute;
+  left: calc(-30px);
+  top:-700px;
+  width: 60px;
+  transform: rotate(-27deg);
+  animation: circTextAnimSmall4a 1s ease-out;
+}
+.PMcircleContentSmall4.active button:nth-child(3){
+  position: absolute;
+  left: calc((100vw/2));
+  transform: translateX(-50%);
+  margin-left: 0rem;
+  top: -760px;
+  width: 90px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.45rem;
+  animation: circTextAnimSmall4b 1s ease-out;
+}
+.PMcircleContentSmall4.active button:nth-child(4){
+  position: absolute;
+  left: 360px;
+  top:-708px;
+  width: 20px;
+  transform: rotate(27deg);
+  animation: circTextAnimSmall4c 1s ease-out;
+}
+.PMcircleContentSmall4.active button:nth-child(1){
+  display: none;
+}
+
+/* //* ..........................................Animations for the smaller devices ..................................... */
+@keyframes circTextAnimSmall1a{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -706px; opacity: 1; }
+}
+@keyframes circTextAnimSmall1b{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -754px; opacity: 1; }
+}
+
+
+@keyframes circTextAnimSmall2a{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -696px; opacity: 1; }
+}
+@keyframes circTextAnimSmall2b{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -754px; opacity: 1; }
+}
+
+
+
+@keyframes circTextAnimSmall3a{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -698px; opacity: 1; }
+}
+@keyframes circTextAnimSmall3b{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -760px; opacity: 1; }
+}
+@keyframes circTextAnimSmall3c{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -706px; opacity: 1; }
+}
+
+
+@keyframes circTextAnimSmall4a{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -700px; opacity: 1; }
+}
+@keyframes circTextAnimSmall4b{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -760px; opacity: 1; }
+}
+@keyframes circTextAnimSmall4c{
+  from { top: -600px; opacity: 0.1;}
+  to { top: -708px; opacity: 1; }
+}
+
+
+
+/*  //* Logo for the circle ie the inside logo.. */
+.LogoCircleImageSmall{
+  position: absolute;
+  top:90px;
+  left: 40%;
+  transform: translateX(-64%);
+}
+
+/* //* Data inside the circle... */
+.PMcircleDataInside{
+  position: absolute;
+  height: 400px;
+  width: 100vw;
+  background: transparent;
+  top: 230px;
+}
+.PMcircleDataInside h1{
+  color: white;
+}
+.PMcircleDataInside p{
+  color: #BEBEBE;
+}
+
+.PMcircleDotsSmall{
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background: transparent;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.PMcircleDotsSmall div:nth-child(1){
+  background: #505078;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.PMcircleDotsSmall div:nth-child(2){
+  background: #505078;
+  height: 10px;
+  width: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+}
+.PMcircleDotsSmall div:nth-child(3){
+  background: #505078;
+  height: 10px;
+  width: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+}
+.PMcircleDotsSmall div:nth-child(4){
+  background: #505078;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* //* Active dots */
+.PMcircleDotsSmall div:nth-child(1).active{
+  background: white;
+  height: 14px;
+  width: 14px;
+
+}
+.PMcircleDotsSmall div:nth-child(2).active{
+  background: #ffffff;
+  height: 14px;
+  width: 14px;
+}
+.PMcircleDotsSmall div:nth-child(3).active{
+  background: #ffffff;
+  height: 14px;
+  width: 14px;
+}
+.PMcircleDotsSmall div:nth-child(4).active{
+  background: #ffffff;
+  height: 14px;
+  width: 14px;
+}
+
+/* //* Buttons on the vertical line.... */
+.PMlineButtonsProperty .PMbutton1{
+  background: linear-gradient(to right,#3A3A86, #004AFF );
+  opacity: .4;
+}
+
+.PMlineButtonsProperty .PMbutton1::before{
+  content: '';
+  background: #ce1fd4;
+  /* background: #F6F6FF; */
+  z-index: 10;
+  height: 200px;
+  width: 200px;
+  top: 10px;
+  left: -10px;
+}
+
+
+
+/* //? ################################################################################################################## */
+/* //? ################################################################################################################## */
+/* //? ##########################                                            ############################################ */
+/* //*...........................            Development Message             ............................................ */
+/* //? ##########################                                            ############################################ */
+/* //? ################################################################################################################## */
+/* //? ################################################################################################################## */

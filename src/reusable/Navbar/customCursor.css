@@ -1,0 +1,40 @@
+/* //? ################################################################### */
+/* //! ###############          CustomCursor CSS        ################## */
+/* //? ################################################################### */
+
+.cursor-holder-div{
+    top: 1rem;
+    right: 4rem;
+    transition: top .3s, left .3s;
+    transition-timing-function: ease-out;
+}
+
+.cursor-svg{
+    position: absolute;
+    height: 3.5rem;
+    width: 3.5rem;
+    z-index: 2300;
+    transform: translate(-50%,-50%);
+    animation: animation_cursor_rotate 4.5s infinite linear;
+}
+
+
+text {
+    font-size: 50px;
+    /* font-family: Copperplate, Copperplate Gothic, serif; */
+    font-weight: 800;
+    font-variant: small-caps;
+    font-variant-ligatures: none;
+    stroke: rgb(0, 31, 167);
+    stroke-width: 1.5px;
+    fill: rgb(117, 111, 243);
+}
+
+@keyframes animation_cursor_rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}

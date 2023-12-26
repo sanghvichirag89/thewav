@@ -1,0 +1,48 @@
+/*//?###################################################################################################################################*/
+/*//!...................................................................................................................................*/
+/*//!......................................                                                  ...........................................*/
+/*//! .....................................    Active styles for the card in landing page    .......................................... */
+/*//!......................................                                                  .......................................... */
+/*//!...................................................................................................................................*/
+/*//?###################################################################################################################################*/
+
+.card{
+    z-index: 100;
+    width: 13vw;
+    overflow: hidden;
+    transition: width .5s ease-out, border .4s ease-out;
+    /* transition: all 1s ease-out; */
+  }
+  .card.active{
+    width: 31vw;
+    border-left: 8px solid #0049FA;
+    /* transition: border 1s ease-out; */
+  }
+  
+  .card-item {
+    display: none;
+    opacity:0;
+    transition: opacity 2s ease-out;
+  }
+  .card.active .card-item{
+    display: block;
+    opacity: 1;
+  }
+  .card-image{
+    margin-top: 2rem;
+    transition: margin-top .5s ease-out,width 1s ease-out;
+    width: 200px;
+  }
+  .card.active .card-image{
+    margin-top: 0rem;
+    width: 240px;
+  }
+  
+  .card-item-button{
+    margin-top: 8rem;
+    transition-delay: 2s;
+    transition: margin-top 5s ease-out; 
+  }
+  .card.active .card-item-button{
+    margin-top: 1.5rem;
+  }
